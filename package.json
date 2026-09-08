@@ -1,1 +1,21 @@
-{ "name": "sefaria-search", "version": "1.0.0", "private": true, "type": "module", "scripts": { "dev": "wrangler dev", "deploy": "wrangler deploy", "typecheck": "tsc --noEmit" }, "dependencies": { "@modelcontextprotocol/server": "^2.0.0", "agents": "latest", "zod": "^3.25.0" }, "devDependencies": { "@cloudflare/workers-types": "latest", "typescript": "^5.9.0", "wrangler": "latest" } } 
+{
+  "name": "sefaria-search",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "build": "tsc --noEmit",
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.0.0",
+    "agents": "latest",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "latest",
+    "typescript": "^5.9.0",
+    "wrangler": "latest"
+  }
+}
